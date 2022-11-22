@@ -32,8 +32,15 @@ struct polynomial_regression {
     struct sigma_y sigma_y;
     struct sigma_xy sigma_xy;
 };
+
+struct regression_output {
+    double b0;
+    double b1;
+    double b2;
+};
 #endif //REGRESI_LINEAR_BERGANDA_REGRESSION_H
 
 double b1(double sigma_x1, double sigma_x2, double sigma_x1y, double sigma_x2y, double sigma_x1x2);
 double b2(double sigma_x1, double sigma_x2, double sigma_x1y, double sigma_x2y, double sigma_x1x2);
 double b0(double sigma_y, double b1, double sigma_x1, double b2, double sigma_x2, int n);
+double multiple_regression(const double *x1, const double *x2, double *y, struct regression_output *regression_output, int n);
