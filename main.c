@@ -1,7 +1,6 @@
 #include "stdio.h"
 #include "regression.h"
 
-
 int main() {
     struct multiple_linear_regression multiple_linear_regression;
 
