@@ -27,20 +27,31 @@ struct sigma_xy {
     double x2y_sigma_of_sigma;
 };
 
-struct polynomial_regression {
-    struct sigma_x sigma_x;
-    struct sigma_y sigma_y;
-    struct sigma_xy sigma_xy;
-};
-
-struct regression_output {
+struct result{
     double b0;
     double b1;
     double b2;
+    double standard_error_estimate;
+    double r_squared;
+};
+
+struct multiple_linear_regression {
+    struct sigma_x sigma_x;
+    struct sigma_y sigma_y;
+    struct sigma_xy sigma_xy;
+    struct result result;
+    int n;
 };
 #endif //REGRESI_LINEAR_BERGANDA_REGRESSION_H
 
-double b1(double sigma_x1, double sigma_x2, double sigma_x1y, double sigma_x2y, double sigma_x1x2);
-double b2(double sigma_x1, double sigma_x2, double sigma_x1y, double sigma_x2y, double sigma_x1x2);
-double b0(double sigma_y, double b1, double sigma_x1, double b2, double sigma_x2, int n);
-double multiple_regression(const double *x1, const double *x2, double *y, struct regression_output *regression_output, int n);
+double b1(struct multiple_linear_regression *multiple_linear_regression);
+
+double b2(struct multiple_linear_regression *multiple_linear_regression);
+
+double b0(struct multiple_linear_regression *multiple_linear_regression);
+
+int linear_regression(const double *x1, const double *x2, double *y, struct multiple_linear_regression *multiple_linear_regression);
+
+double standard_error_of_estimate(struct multiple_linear_regression *multiple_linear_regression);
+
+double r_squared(struct multiple_linear_regression *multiple_linear_regression);

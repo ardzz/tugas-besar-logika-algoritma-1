@@ -4,17 +4,20 @@
 
 
 int main() {
-    double x1[] = {21, 16, 17, 20, 22, 18};
-    double x2[] = {8, 2, 6, 4, 7, 3};
-    double y[] = {7, 3, 7, 2, 8, 3};
-    int n = sizeof(x1) / sizeof(x1[0]);
+    struct multiple_linear_regression multiple_linear_regression;
 
-    struct regression_output regression_output;
-    multiple_regression(x1, x2, y, &regression_output, n);
+    double x1[] = {60, 70, 75, 80, 80, 90, 95, 95, 100, 100};
+    double x2[] = {110, 120, 115, 130, 110, 120, 120, 125, 110, 120};
+    double y[] = {65, 70, 75, 75, 80, 80, 85, 95, 90, 98};
+    multiple_linear_regression.n = sizeof(x1) / sizeof(x1[0]);
 
-    printf("b0: %f\n", regression_output.b0);
-    printf("b1: %f\n", regression_output.b1);
-    printf("b2: %f\n", regression_output.b2);
+    linear_regression(x1, x2, y, &multiple_linear_regression);
+
+    printf("b0: %f\n", multiple_linear_regression.result.b0);
+    printf("b1: %f\n", multiple_linear_regression.result.b1);
+    printf("b2: %f\n", multiple_linear_regression.result.b2);
+    printf("standard error of estimate: %f\n", multiple_linear_regression.result.standard_error_estimate);
+    printf("r squared: %f\n", multiple_linear_regression.result.r_squared);
 
     return 0;
 }
