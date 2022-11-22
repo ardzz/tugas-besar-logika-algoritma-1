@@ -3,7 +3,7 @@
 //
 #include "statistics.h"
 
-double sum(const int numbers[], int size){
+double sum(const double numbers[], int size){
     double sum = 0;
     for (int i = 0; i < size; i++){
         sum += numbers[i];
@@ -11,8 +11,8 @@ double sum(const int numbers[], int size){
     return sum;
 }
 
-double square_sum(const int *array, int size) {
-    int sum = 0;
+double square_sum(const double *array, int size) {
+    double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array[i] * array[i];
     }
@@ -23,7 +23,7 @@ double sigma_of_sigma(double sum_square, double sum, int count) {
     return sum_square - ((sum * sum) / count);
 }
 
-double sum_multi_value(const int *array1, const int *array2, int size) {
+double sum_multi_value(const double *array1, const double *array2, int size) {
     double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array1[i] * array2[i];
