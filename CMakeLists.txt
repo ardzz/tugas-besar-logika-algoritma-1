@@ -8,4 +8,5 @@ include_directories(.)
 add_executable(Regresi_Linear_Berganda
         main.c
         statistics.c statistics.h
-        regression.c regression.h)
+        regression.c regression.h
+        csvReader.c csvReader.h)
