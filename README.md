@@ -80,16 +80,38 @@ Diketahui sebuah data berikut ini:
 Langkah selanjutnya adalah mencari $\Sigma x_1$, $\Sigma x_2$, $\Sigma x_3$, $\Sigma x_4$, $\Sigma y$, $\Sigma x_1y$, $\Sigma x_2y$, $\Sigma x_3y$, $\Sigma x_4y$, $\Sigma x_1^2$, $\Sigma x_2^2$, $\Sigma x_3^2$, $\Sigma x_4^2$ $\Sigma x_1x_2$, $\Sigma x_1x_3$, $\Sigma x_1x_4$, $\Sigma x_2x_3$, $\Sigma x_2x_4$, $\Sigma x_3x_4$.
 
 * Menghitung $\Sigma x_1$
-$$\Sigma x_1 = 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 = 740$$
+
+$$ \Sigma x_1 = 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 $$
+$$ \Sigma x_1 = 740 $$
+
 * Menghitung $\Sigma x_2$
-$$\Sigma x_2 = 37 + 34 + 38 + 33 + 39 + 28 + 36 + 30 + 37 + 31 + 35 + 33 + 33 + 29 + 35 + 34 + 39 + 37 + 34 + 28 = 680$$
+
+$$ \Sigma x_2 = 37 + 34 + 38 + 33 + 39 + 28 + 36 + 30 + 37 + 31 + 35 + 33 + 33 + 29 + 35 + 34 + 39 + 37 + 34 + 28 $$
+$$ \Sigma x_2 =680 $$
+
 * Menghitung $\Sigma x_3$
-$$\Sigma x_3 = 40 + 35 + 38 + 37 + 40 + 31 + 35 + 32 + 31 + 35 + 44 + 38 + 36 + 30 + 38 + 35 + 36 + 35 + 39 + 35 = 720$$
+
+$$ \Sigma x_3 = 40 + 35 + 38 + 37 + 40 + 31 + 35 + 32 + 31 + 35 + 44 + 38 + 36 + 30 + 38 + 35 + 36 + 35 + 39 + 35 $$
+$$ \Sigma x_3 = 720 $$
+
 * Menghitung $\Sigma x_4$
-$$\Sigma x_4 = 39 + 37 + 36 + 35 + 38 + 31 + 35 + 34 + 39 + 35 + 40 + 36 + 35 + 28 + 40 + 35 + 39 + 37 + 37 + 34 = 720$$
+
+$$ \Sigma x_4 = 39 + 37 + 36 + 35 + 38 + 31 + 35 + 34 + 39 + 35 + 40 + 36 + 35 + 28 + 40 + 35 + 39 + 37 + 37 + 34 $$ 
+$$ \Sigma x_4 = 720 $$
+
 * Menghitung $\Sigma y$
-$$\Sigma y = 41 + 40 + 43 + 41 + 42 + 36 + 42 + 39 + 40 + 38 + 48 + 43 + 42 + 36 + 44 + 43 + 45 + 44 + 41 + 36 = 820$$
+
+$$ \Sigma y = 41 + 40 + 43 + 41 + 42 + 36 + 42 + 39 + 40 + 38 + 48 + 43 + 42 + 36 + 44 + 43 + 45 + 44 + 41 + 36 $$
+$$\Sigma y = 820 $$
+
 * Menghitung $\Sigma x_1y$
-$$\Sigma x_1y = 39 \times 41 + 37 \times 40 + 41 \times 43 + 37 \times 41 + 42 \times 42 + 33 \times 36 + 38 \times 42 + 35 \times 39 + 38 \times 40 + 35 \times 38 + 38 \times 48 + 37 \times 43 + 35 \times 42 + 33 \times 36 + 39 \times 44 + 36 \times 43 + 42 \times 45 + 39 \times 44 + 37 \times 41 + 29 \times 36 = 30474$$
+
+$$ \Sigma x_1y = 39 \times 41 + 37 \times 40 + 41 \times 43 + 37 \times 41 + 42 \times 42 + 33 \times 36 + 38 \times 42 + 35 \times 39 + 38 \times 40 + 35 \times 38 + 38 \times 48 + 37 \times 43 + 35 \times 42 + 33 \times 36 + 39 \times 44 + 36 \times 43 + 42 \times 45 + 39 \times 44 + 37 \times 41 + 29 \times 36 $$
+
+$$ \Sigma x_1y = 30474 $$
+
 * Menghitung $\Sigma x_2y$
-$$\Sigma x_2y = 37 \times 41 + 34 \times 40 + 38 \times 43 + 33 \times 41 + 39 \times 42 + 28 \times 36 + 36 \times 42 + 30 \times 39 + 37 \times 40 + 31 \times 38 + 35 \times 48 + 33 \times 43 + 33 \times 42 + 29 \times 36 + 35 \times 44 + 34 \times 43 + 39 \times 45 + 37 \times 44 + 34 \times 41 + 28 \times 36 = 28026$$
+
+$$ \Sigma x_2y = 37 \times 41 + 34 \times 40 + 38 \times 43 + 33 \times 41 + 39 \times 42 + 28 \times 36 + 36 \times 42 + 30 \times 39 + 37 \times 40 + 31 \times 38 + 35 \times 48 + 33 \times 43 + 33 \times 42 + 29 \times 36 + 35 \times 44 + 34 \times 43 + 39 \times 45 + 37 \times 44 + 34 \times 41 + 28 \times 36 $$
+
+$$ \Sigma x_2y= 28026 $$
