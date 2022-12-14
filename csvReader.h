@@ -10,10 +10,10 @@
 typedef struct CsvFileMems{
     FILE *file;
     int colSize;
-    double *dataRow;
+    long double *dataRow;
     char *headers[MAX_CSV_HEADER];
 
-    double (*GetField)(struct CsvFileMems *csv, const char *field);
+    long double (*GetField)(struct CsvFileMems *csv, const char *field);
 } CSVFILE;
 
 

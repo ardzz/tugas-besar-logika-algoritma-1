@@ -6,10 +6,10 @@
 #define REGRESI_LINEAR_BERGANDA_REGRESSION_H
 
 struct sum{
-    double sum;
-    double square_sum;
-    double sigma_of_sigma;
-    double average;
+    long double sum;
+    long double square_sum;
+    long double sigma_of_sigma;
+    long double average;
 };
 
 struct sigma_x {
@@ -46,31 +46,31 @@ struct sigma_y {
 };
 
 struct sigma_xy {
-    double x1y_sum;
-    double x1y_sigma_of_sigma;
-    double x2y_sum;
-    double x2y_sigma_of_sigma;
-    double x3y_sum;
-    double x3y_sigma_of_sigma;
-    double x4y_sum;
-    double x4y_sigma_of_sigma;
-    double x5y_sum;
-    double x5y_sigma_of_sigma;
-    double x6y_sum;
-    double x6y_sigma_of_sigma;
+    long double x1y_sum;
+    long double x1y_sigma_of_sigma;
+    long double x2y_sum;
+    long double x2y_sigma_of_sigma;
+    long double x3y_sum;
+    long double x3y_sigma_of_sigma;
+    long double x4y_sum;
+    long double x4y_sigma_of_sigma;
+    long double x5y_sum;
+    long double x5y_sigma_of_sigma;
+    long double x6y_sum;
+    long double x6y_sigma_of_sigma;
 };
 
 struct result{
-    double b0;
-    double b1;
-    double b2;
-    double b3;
-    double b4;
-    double b5;
-    double b6;
-    double standard_error_estimate;
-    double r_squared;
-    double mean_absolute_error;
+    long double b0;
+    long double b1;
+    long double b2;
+    long double b3;
+    long double b4;
+    long double b5;
+    long double b6;
+    long double standard_error_estimate;
+    long double r_squared;
+    long double mean_absolute_error;
 };
 
 struct multiple_linear_regression {
@@ -82,14 +82,14 @@ struct multiple_linear_regression {
 };
 #endif //REGRESI_LINEAR_BERGANDA_REGRESSION_H
 
-int linear_regression(const double *x1, const double *x2, const double *x3,
-                      const double *x4, const double *x5, const double *x6,
-                      double *y, struct multiple_linear_regression *multiple_linear_regression);
+int linear_regression(const long double *x1, const long double *x2, const long double *x3,
+                      const long double *x4, const long double *x5, const long double *x6,
+                      long double *y, struct multiple_linear_regression *multiple_linear_regression);
 
-double standard_error_of_estimate(struct multiple_linear_regression *multiple_linear_regression);
+long double standard_error_of_estimate(struct multiple_linear_regression *multiple_linear_regression);
 
-double r_squared(struct multiple_linear_regression *multiple_linear_regression);
+long double r_squared(struct multiple_linear_regression *multiple_linear_regression);
 
-double mean_absolute_error(const double *y, const double *y_hat, int n);
+long double mean_absolute_error(const long double *y, const long double *y_hat, int n);
 
-double predict(struct multiple_linear_regression *multiple_linear_regression, double x1, double x2, double x3, double x4, double x5, double x6);
+long double predict(struct multiple_linear_regression *multiple_linear_regression, long double x1, long double x2, long double x3, long double x4, long double x5, long double x6);

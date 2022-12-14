@@ -2,9 +2,9 @@
 #include <string.h>
 #include <unistd.h>
 
-static double csvGetField(struct CsvFileMems *csvFile, const char *field){
+static long double csvGetField(struct CsvFileMems *csvFile, const char *field){
     int i = 0;
-    double val = 0;
+    long double val = 0;
     for(i = 0; i < csvFile->colSize; i++){
         if(strcmp(field, csvFile->headers[i]) == 0){
             val = csvFile->dataRow[i];
@@ -24,7 +24,7 @@ static bool scanHeader(CSVFILE *csvFile){
             csvFile->headers[csvFile->colSize] = strdup(tok);
         }
 
-        csvFile->dataRow = (double *)calloc(csvFile->colSize, sizeof(double));
+        csvFile->dataRow = (long double *)calloc(csvFile->colSize, sizeof(long double));
         return true;
     }
     return false;

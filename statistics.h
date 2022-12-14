@@ -7,11 +7,11 @@
 
 #endif //REGRESI_LINEAR_BERGANDA_STATISTICS_H
 
-double sum(const double numbers[], int size);
-double square_sum(const double *array, int size);
-double sigma_of_sigma(double sum_square, double sum, int count);
-double sum_multi_value(const double *array1, const double *array2, int size);
-double sigma_x1x2(double x1x2, double x1, double x2, int count);
-int forwardElim(double mat[NOK][NOK+1]);
-double backSub(double mat[NOK][NOK+1], double *gaussian_elimination);
-double gaussianElimination(double mat[NOK][NOK+1], double *gaussian_elimination);
+long double sum(const long double numbers[], int size);
+long double square_sum(const long double *array, int size);
+long double sigma_of_sigma(long double sum_square, long double sum, int count);
+long double sum_multi_value(const long double *array1, const long double *array2, int size);
+long double sigma_x1x2(long double x1x2, long double x1, long double x2, int count);
+int forwardElim(long double mat[NOK][NOK+1]);
+long double backSub(long double mat[NOK][NOK+1], long double *gaussian_elimination);
+long double gaussianElimination(long double mat[NOK][NOK+1], long double *gaussian_elimination);

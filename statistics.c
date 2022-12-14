@@ -5,39 +5,39 @@
 #include "stdio.h"
 #include "math.h"
 
-double sum(const double numbers[], int size){
-    double sum = 0;
+long double sum(const long double numbers[], int size){
+    long double sum = 0;
     for (int i = 0; i < size; i++){
         sum += numbers[i];
     }
     return sum;
 }
 
-double square_sum(const double *array, int size) {
-    double sum = 0;
+long double square_sum(const long double *array, int size) {
+    long double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array[i] * array[i];
     }
     return sum;
 }
 
-double sigma_of_sigma(double sum_square, double sum, int count) {
+long double sigma_of_sigma(long double sum_square, long double sum, int count) {
     return sum_square - ((sum * sum) / count);
 }
 
-double sum_multi_value(const double *array1, const double *array2, int size) {
-    double sum = 0;
+long double sum_multi_value(const long double *array1, const long double *array2, int size) {
+    long double sum = 0;
     for (int i = 0; i < size; i++) {
         sum += array1[i] * array2[i];
     }
     return sum;
 }
 
-double sigma_x1x2(double x1x2, double x1, double x2, int count) {
+long double sigma_x1x2(long double x1x2, long double x1, long double x2, int count) {
     return x1x2 - ((x1 * x2) / count);
 }
 
-double gaussianElimination(double mat[NOK][NOK+1], double *gaussian_elimination)
+long double gaussianElimination(long double mat[NOK][NOK+1], long double *gaussian_elimination)
 {
     /* reduction into r.e.f. */
     int singular_flag = forwardElim(mat);
@@ -65,20 +65,20 @@ double gaussianElimination(double mat[NOK][NOK+1], double *gaussian_elimination)
 }
 
 // function for elementary operation of swapping two rows
-void swap_row(double mat[NOK][NOK+1], int i, int j)
+void swap_row(long double mat[NOK][NOK+1], int i, int j)
 {
     //printf("Swapped rows %d and %d\n", i, j);
 
     for (int k=0; k<=NOK; k++)
     {
-        double temp = mat[i][k];
+        long double temp = mat[i][k];
         mat[i][k] = mat[j][k];
         mat[j][k] = temp;
     }
 }
 
 // function to reduce matrix to r.e.f.
-int forwardElim(double mat[NOK][NOK+1])
+int forwardElim(long double mat[NOK][NOK+1])
 {
     for (int k=0; k<NOK; k++)
     {
@@ -106,7 +106,7 @@ int forwardElim(double mat[NOK][NOK+1])
         {
             /* factor f to set current row kth element to 0,
             * and subsequently remaining kth column to 0 */
-            double f = mat[i][k]/mat[k][k];
+            long double f = mat[i][k]/mat[k][k];
 
             /* subtract fth multiple of corresponding kth
             row element*/
@@ -124,9 +124,9 @@ int forwardElim(double mat[NOK][NOK+1])
 }
 
 // function to calculate the values of the unknowns
-double backSub(double mat[NOK][NOK+1], double *gaussian_elimination)
+long double backSub(long double mat[NOK][NOK+1], long double *gaussian_elimination)
 {
-    double x[NOK]; // An array to store solution
+    long double x[NOK]; // An array to store solution
 
     /* Start calculating from last equation up to the
     first */
