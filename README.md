@@ -79,17 +79,148 @@ Diketahui sebuah data berikut ini:
 
 Langkah selanjutnya adalah mencari $\Sigma x_1$, $\Sigma x_2$, $\Sigma x_3$, $\Sigma x_4$, $\Sigma y$, $\Sigma x_1y$, $\Sigma x_2y$, $\Sigma x_3y$, $\Sigma x_4y$, $\Sigma x_1^2$, $\Sigma x_2^2$, $\Sigma x_3^2$, $\Sigma x_4^2$ $\Sigma x_1x_2$, $\Sigma x_1x_3$, $\Sigma x_1x_4$, $\Sigma x_2x_3$, $\Sigma x_2x_4$, $\Sigma x_3x_4$.
 
-* Menghitung $\Sigma x_1$
-$$\Sigma x_1 = 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 = 740$$
-* Menghitung $\Sigma x_2$
-$$\Sigma x_2 = 37 + 34 + 38 + 33 + 39 + 28 + 36 + 30 + 37 + 31 + 35 + 33 + 33 + 29 + 35 + 34 + 39 + 37 + 34 + 28 = 680$$
-* Menghitung $\Sigma x_3$
-$$\Sigma x_3 = 40 + 35 + 38 + 37 + 40 + 31 + 35 + 32 + 31 + 35 + 44 + 38 + 36 + 30 + 38 + 35 + 36 + 35 + 39 + 35 = 720$$
-* Menghitung $\Sigma x_4$
-$$\Sigma x_4 = 39 + 37 + 36 + 35 + 38 + 31 + 35 + 34 + 39 + 35 + 40 + 36 + 35 + 28 + 40 + 35 + 39 + 37 + 37 + 34 = 720$$
-* Menghitung $\Sigma y$
-$$\Sigma y = 41 + 40 + 43 + 41 + 42 + 36 + 42 + 39 + 40 + 38 + 48 + 43 + 42 + 36 + 44 + 43 + 45 + 44 + 41 + 36 = 820$$
-* Menghitung $\Sigma x_1y$
-$$\Sigma x_1y = 39 \times 41 + 37 \times 40 + 41 \times 43 + 37 \times 41 + 42 \times 42 + 33 \times 36 + 38 \times 42 + 35 \times 39 + 38 \times 40 + 35 \times 38 + 38 \times 48 + 37 \times 43 + 35 \times 42 + 33 \times 36 + 39 \times 44 + 36 \times 43 + 42 \times 45 + 39 \times 44 + 37 \times 41 + 29 \times 36 = 30474$$
-* Menghitung $\Sigma x_2y$
-$$\Sigma x_2y = 37 \times 41 + 34 \times 40 + 38 \times 43 + 33 \times 41 + 39 \times 42 + 28 \times 36 + 36 \times 42 + 30 \times 39 + 37 \times 40 + 31 \times 38 + 35 \times 48 + 33 \times 43 + 33 \times 42 + 29 \times 36 + 35 \times 44 + 34 \times 43 + 39 \times 45 + 37 \times 44 + 34 \times 41 + 28 \times 36 = 28026$$
+* Contoh untuk mencari $\Sigma x_1$
+
+$$
+\Sigma x_1 = 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29
+$$
+
+$$
+\Sigma x_1 = 740
+$$
+
+Dari data diatas dapat diperoleh:
+
+1. $\Sigma x_1$ = 740
+2. $\Sigma x_2$ = 680
+3. $\Sigma x_3$ = 720
+4. $\Sigma x_4$ = 720
+5. $\Sigma y$ = 820
+6. $\Sigma x_1y$ = 30474
+7. $\Sigma x_2y$ = 28026
+8. $\Sigma x_3y$ = 29633
+9. $\Sigma x_4y$ = 29635
+10. $\Sigma x_1^2$ = 27570
+11. $\Sigma x_2^2$ = 23344
+12. $\Sigma x_3^2$ = 26146
+13. $\Sigma x_4^2$ = 26088
+14. $\Sigma x_1x_2$ = 25354
+15. $\Sigma x_1x_3$ = 26743
+16. $\Sigma x_1x_4$ = 26764
+17. $\Sigma x_2x_3$ = 24592
+18. $\Sigma x_2x_4$ = 24627
+19. $\Sigma x_3x_4$ = 26051
+
+Setelah itu kita akan mencari skor deviasi tiap variabel independen dan variabel dependen.
+
+Contoh untuk mencari skor deviasi
+
+$$
+\Sigma x_n^2 = \Sigma x_n^2 - \frac{(\Sigma x_n)^2}{n}
+$$
+
+$$
+\Sigma x_1^2 = 27570 - \frac{(740)^2}{20}
+$$
+
+$$
+\Sigma x_1^2 = 27570 - 27380
+$$
+
+$$
+\Sigma x_1^2 = 190
+$$
+
+Dari data diatas dapat diperoleh skor deviasi:
+
+1. $\Sigma x_1^2$ = 190
+2. $\Sigma x_2^2$ = 224
+3. $\Sigma x_3^2$ = 226
+4. $\Sigma x_4^2$ = 168
+5. $\Sigma y^2$ = 148
+6. $\Sigma x_1y$ = 134
+7. $\Sigma x_2y$ = 114
+8. $\Sigma x_3y$ = 146
+9. $\Sigma x_4y$ = 115
+10. $\Sigma x_1x_2$ = 194
+11. $\Sigma x_1x_3$ = 103
+12. $\Sigma x_1x_4$ = 124
+13. $\Sigma x_2x_3$ = 112
+14. $\Sigma x_2x_4$ = 147
+15. $\Sigma x_3x_4$ = 131
+
+Maka persamaan regresi linier berganda untuk empat variabel independen adalah:
+
+$$
+y = \beta_0 + \beta_1x_1 + \beta_2x_2 + \beta_3x_3 + \beta_4x_4
+$$
+
+Untuk mencari koeffisien $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ dapat digunakan persamaan Simultaneous Equation, sebagai berikut:
+
+$$
+\begin{align}
+\Sigma x_1y &= \Sigma x_1 + \beta_1\Sigma x_1^2 + \beta_2\Sigma x_1x_2 + \beta_3\Sigma x_1x_3 + \beta_4\Sigma x_1x_4 \\
+\Sigma x_2y &= \Sigma x_2 + \beta_1\Sigma x_1x_2 + \beta_2\Sigma x_2^2 + \beta_3\Sigma x_2x_3 + \beta_4\Sigma x_2x_4 \\
+\Sigma x_3y &= \Sigma x_3 + \beta_1\Sigma x_1x_3 + \beta_2\Sigma x_2x_3 + \beta_3\Sigma x_3^2 + \beta_4\Sigma x_3x_4 \\
+\Sigma x_4y &= \Sigma x_4 + \beta_1\Sigma x_1x_4 + \beta_2\Sigma x_2x_4 + \beta_3\Sigma x_3x_4 + \beta_4\Sigma x_4^2
+\end{align}
+$$
+
+Dengan menggunakan persamaan Simultaneous Equation diatas, maka dapat diperoleh:
+
+$$
+\begin{align}
+134 = \beta_1(190) + \beta_2(194) + \beta_3(103) + \beta_4(124) \\
+146 = \beta_1(194) + \beta_2(224) + \beta_3(112) + \beta_4(147) \\
+113 = \beta_1(103) + \beta_2(112) + \beta_3(226) + \beta_4(131) \\
+115 = \beta_1(124) + \beta_2(147) + \beta_3(131) + \beta_4(168)
+\end{align}
+$$
+
+Setelah itu kita akan mencari nilai $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ dengan menggunakan metode Gauss Elimination.
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & 190 & 194 & 103 & 124 & 134 \\
+1 & 194 & 224 & 112 & 147 & 146 \\
+1 & 103 & 112 & 226 & 131 & 113 \\
+1 & 124 & 147 & 131 & 168 & 115
+\end{bmatrix}
+\end{align}
+$$
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & 190 & 194 & 103 & 124 & 134 \\
+0 & 4 & 30 & -9 & 23 & 12 \\
+0 & -91 & -78 & 123 & -18 & -33 \\
+0 & -70 & -23 & 23 & 44 & -2
+\end{bmatrix}
+\end{align}
+$$
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & 190 & 194 & 103 & 124 & 134 \\
+0 & 4 & 30 & -9 & 23 & 12 \\
+0 & 0 & 5 & -1 & 1 & 1 \\
+0 & 0 & 55 & -20 & 68 & 31
+\end{bmatrix}
+\end{align}
+$$
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & 190 & 194 & 103 & 124 & 134 \\
+0 & 4 & 30 & -9 & 23 & 12 \\
+0 & 0 & 5 & -1 & 1 & 1 \\
+0 & 0 & 0 & 1 & 1 & 6
+\end{bmatrix}
+\end{align}
+$$
+
+Maka dapat diperoleh nilai $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ adalah:
