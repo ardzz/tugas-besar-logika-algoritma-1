@@ -79,7 +79,7 @@ Diketahui sebuah data berikut ini:
 
 Langkah selanjutnya adalah mencari $\Sigma x_1$, $\Sigma x_2$, $\Sigma x_3$, $\Sigma x_4$, $\Sigma y$, $\Sigma x_1y$, $\Sigma x_2y$, $\Sigma x_3y$, $\Sigma x_4y$, $\Sigma x_1^2$, $\Sigma x_2^2$, $\Sigma x_3^2$, $\Sigma x_4^2$ $\Sigma x_1x_2$, $\Sigma x_1x_3$, $\Sigma x_1x_4$, $\Sigma x_2x_3$, $\Sigma x_2x_4$, $\Sigma x_3x_4$.
 
-* Contoh untuk mencari $\Sigma x_1$ adalah dengan menjumlahkan semua nilai x1, yaitu 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 = 720
+Contoh untuk mencari $\Sigma x_1$ adalah dengan menjumlahkan semua nilai x1, yaitu 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 = 720
 
 $$
 \Sigma x_1 = 740
