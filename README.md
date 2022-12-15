@@ -81,29 +81,33 @@ Langkah selanjutnya adalah mencari $\Sigma x_1$, $\Sigma x_2$, $\Sigma x_3$, $\S
 
 * Contoh untuk mencari $\Sigma x_1$ adalah dengan menjumlahkan semua nilai x1, yaitu 39 + 37 + 41 + 37 + 42 + 33 + 38 + 35 + 38 + 35 + 38 + 37 + 35 + 33 + 39 + 36 + 42 + 39 + 37 + 29 = 720
 
-$$ \Sigma x_1 = 740 $$
+$$
+\Sigma x_1 = 740
+$$
 
 Dari data diatas dapat diperoleh:
 
-1. $\Sigma x_1$ = 740
-2. $\Sigma x_2$ = 680
-3. $\Sigma x_3$ = 720
-4. $\Sigma x_4$ = 720
-5. $\Sigma y$ = 820
-6. $\Sigma x_1y$ = 30474
-7. $\Sigma x_2y$ = 28026
-8. $\Sigma x_3y$ = 29633
-9. $\Sigma x_4y$ = 29635
-10. $\Sigma x_1^2$ = 27570
-11. $\Sigma x_2^2$ = 23344
-12. $\Sigma x_3^2$ = 26146
-13. $\Sigma x_4^2$ = 26088
-14. $\Sigma x_1x_2$ = 25354
-15. $\Sigma x_1x_3$ = 26743
-16. $\Sigma x_1x_4$ = 26764
-17. $\Sigma x_2x_3$ = 24592
-18. $\Sigma x_2x_4$ = 24627
-19. $\Sigma x_3x_4$ = 26051
+| Variabel          | Nilai |
+| ----------------- | ----- |
+| $\Sigma x_1$    | 740   |
+| $\Sigma x_2$    | 680   |
+| $\Sigma x_3$    | 720   |
+| $\Sigma x_4$    | 720   |
+| $\Sigma y$      | 820   |
+| $\Sigma x_1y$   | 30474 |
+| $\Sigma x_2y$   | 28026 |
+| $\Sigma x_3y$   | 29633 |
+| $\Sigma x_4y$   | 29635 |
+| $\Sigma x_1^2$  | 27570 |
+| $\Sigma x_2^2$  | 23344 |
+| $\Sigma x_3^2$  | 26146 |
+| $\Sigma x_4^2$  | 26088 |
+| $\Sigma x_1x_2$ | 25354 |
+| $\Sigma x_1x_3$ | 26743 |
+| $\Sigma x_1x_4$ | 26764 |
+| $\Sigma x_2x_3$ | 24592 |
+| $\Sigma x_2x_4$ | 24627 |
+| $\Sigma x_3x_4$ | 26051 |
 
 Setelah itu kita akan mencari skor deviasi tiap variabel independen dan variabel dependen.
 
@@ -127,21 +131,23 @@ $$
 
 Dari data diatas dapat diperoleh skor deviasi:
 
-1. $\Sigma x_1^2$ = 190
-2. $\Sigma x_2^2$ = 224
-3. $\Sigma x_3^2$ = 226
-4. $\Sigma x_4^2$ = 168
-5. $\Sigma y^2$ = 148
-6. $\Sigma x_1y$ = 134
-7. $\Sigma x_2y$ = 114
-8. $\Sigma x_3y$ = 146
-9. $\Sigma x_4y$ = 115
-10. $\Sigma x_1x_2$ = 194
-11. $\Sigma x_1x_3$ = 103
-12. $\Sigma x_1x_4$ = 124
-13. $\Sigma x_2x_3$ = 112
-14. $\Sigma x_2x_4$ = 147
-15. $\Sigma x_3x_4$ = 131
+| Variabel          | Nilai |
+| ----------------- | ----- |
+| $\Sigma x_1^2$  | 190   |
+| $\Sigma x_2^2$  | 224   |
+| $\Sigma x_3^2$  | 226   |
+| $\Sigma x_4^2$  | 168   |
+| $\Sigma y^2$    | 148   |
+| $\Sigma x_1y$   | 134   |
+| $\Sigma x_2y$   | 114   |
+| $\Sigma x_3y$   | 146   |
+| $\Sigma x_4y$   | 115   |
+| $\Sigma x_1x_2$ | 194   |
+| $\Sigma x_1x_3$ | 103   |
+| $\Sigma x_1x_4$ | 124   |
+| $\Sigma x_2x_3$ | 112   |
+| $\Sigma x_2x_4$ | 147   |
+| $\Sigma x_3x_4$ | 131   |
 
 Maka persamaan regresi linier berganda untuk empat variabel independen adalah:
 
