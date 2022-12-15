@@ -182,45 +182,88 @@ Setelah itu kita akan mencari nilai $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, 
 $$
 \begin{align}
 \begin{bmatrix}
-1 & 190 & 194 & 103 & 124 & 134 \\
-1 & 194 & 224 & 112 & 147 & 146 \\
-1 & 103 & 112 & 226 & 131 & 113 \\
-1 & 124 & 147 & 131 & 168 & 115
+190 & 194 & 103 & 124 &| 134 \\
+194 & 224 & 112 & 147 &| 146 \\
+103 & 112 & 226 & 131 &| 113 \\
+124 & 147 & 131 & 168 &| 115
 \end{bmatrix}
 \end{align}
 $$
+
+R1 / 190 → R1 (divide the 1 row by 190)
 
 $$
 \begin{align}
 \begin{bmatrix}
-1 & 190 & 194 & 103 & 124 & 134 \\
-0 & 4 & 30 & -9 & 23 & 12 \\
-0 & -91 & -78 & 123 & -18 & -33 \\
-0 & -70 & -23 & 23 & 44 & -2
+1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
+194 & 224 & 112 & 147 &| 146 \\
+103 & 112 & 226 & 131 &| 113 \\
+124 & 147 & 131 & 168 &| 115
 \end{bmatrix}
 \end{align}
 $$
+
+R2 - 194 R1 → R2 (multiply 1 row by 194 and subtract it from 2 row)
 
 $$
 \begin{align}
 \begin{bmatrix}
-1 & 190 & 194 & 103 & 124 & 134 \\
-0 & 4 & 30 & -9 & 23 & 12 \\
-0 & 0 & 5 & -1 & 1 & 1 \\
-0 & 0 & 55 & -20 & 68 & 31
+1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
+0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
+103 & 112 & 226 & 131 &| 113 \\
+124 & 147 & 131 & 168 &| 115
 \end{bmatrix}
 \end{align}
 $$
+
+R3 - 103 R1 → R3 (multiply 1 row by 103 and subtract it from 3 row)
 
 $$
 \begin{align}
 \begin{bmatrix}
-1 & 190 & 194 & 103 & 124 & 134 \\
-0 & 4 & 30 & -9 & 23 & 12 \\
-0 & 0 & 5 & -1 & 1 & 1 \\
-0 & 0 & 0 & 1 & 1 & 6
+1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
+0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
+0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
+124 & 147 & 131 & 168 &| 115
 \end{bmatrix}
 \end{align}
 $$
 
-Maka dapat diperoleh nilai $\beta_0$, $\beta_1$, $\beta_2$, $\beta_3$, $\beta_4$ adalah:
+R4 - 124 R1 → R4 (multiply 1 row by 124 and subtract it from 4 row)
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
+0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
+0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
+0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
+\end{bmatrix}
+\end{align}
+$$
+
+R2 / 2462/95 → R2 (divide the 2 row by 2462/95)
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
+0 & 1 & \frac{649}{2462} & \frac{1937}{2462} &| \frac{436}{1231} \\
+0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
+0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
+\end{bmatrix}
+\end{align}
+$$
+
+R1 - 97/95 R2 → R1 (multiply 2 row by 97/95 and subtract it from 1 row);
+
+$$
+\begin{align}
+\begin{bmatrix}
+1 & 0 & \frac{336}{1231} & -\frac{371}{1231} &| \frac{423}{1231} \\
+0 & 1 & \frac{649}{2462} & \frac{1937}{2462} &| \frac{436}{1231} \\
+0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
+0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
+\end{bmatrix}
+\end{align}
+$$
