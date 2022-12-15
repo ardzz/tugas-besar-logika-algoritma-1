@@ -190,80 +190,19 @@ $$
 \end{align}
 $$
 
-R1 / 190 → R1 (divide the 1 row by 190)
+Dengan bantuan [kalkulator online](https://onlinemschool.com/math/assistance/equation/gaus/), maka dapat diperoleh:
 
 $$
 \begin{align}
-\begin{bmatrix}
-1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
-194 & 224 & 112 & 147 &| 146 \\
-103 & 112 & 226 & 131 &| 113 \\
-124 & 147 & 131 & 168 &| 115
-\end{bmatrix}
+\beta_1 = \frac{13332075}{42090757} = 0.316 \\
+\beta_2 = \frac{8277471}{42090757} = 0.197 \\
+\beta_3 = \frac{7424042}{42090757} = 0.176 \\
+\beta_4 = \frac{5940012}{42090757} = 0.141
 \end{align}
 $$
 
-R2 - 194 R1 → R2 (multiply 1 row by 194 and subtract it from 2 row)
+Dengan demikian persamaan regresi linier berganda untuk empat variabel independen adalah:
 
 $$
-\begin{align}
-\begin{bmatrix}
-1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
-0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
-103 & 112 & 226 & 131 &| 113 \\
-124 & 147 & 131 & 168 &| 115
-\end{bmatrix}
-\end{align}
-$$
-
-R3 - 103 R1 → R3 (multiply 1 row by 103 and subtract it from 3 row)
-
-$$
-\begin{align}
-\begin{bmatrix}
-1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
-0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
-0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
-124 & 147 & 131 & 168 &| 115
-\end{bmatrix}
-\end{align}
-$$
-
-R4 - 124 R1 → R4 (multiply 1 row by 124 and subtract it from 4 row)
-
-$$
-\begin{align}
-\begin{bmatrix}
-1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
-0 & \frac{2462}{95} & \frac{649}{95} & \frac{1937}{95} &| \frac{872}{95} \\
-0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
-0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
-\end{bmatrix}
-\end{align}
-$$
-
-R2 / 2462/95 → R2 (divide the 2 row by 2462/95)
-
-$$
-\begin{align}
-\begin{bmatrix}
-1 & \frac{97}{95} & \frac{103}{190} & \frac{62}{95} &| \frac{67}{95} \\
-0 & 1 & \frac{649}{2462} & \frac{1937}{2462} &| \frac{436}{1231} \\
-0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
-0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
-\end{bmatrix}
-\end{align}
-$$
-
-R1 - 97/95 R2 → R1 (multiply 2 row by 97/95 and subtract it from 1 row);
-
-$$
-\begin{align}
-\begin{bmatrix}
-1 & 0 & \frac{336}{1231} & -\frac{371}{1231} &| \frac{423}{1231} \\
-0 & 1 & \frac{649}{2462} & \frac{1937}{2462} &| \frac{436}{1231} \\
-0 & \frac{649}{95} & \frac{32331}{190} & \frac{6059}{95} &| \frac{3834}{95} \\
-0 & \frac{1937}{95} & \frac{6059}{95} & \frac{8272}{95} &| \frac{2617}{95}
-\end{bmatrix}
-\end{align}
+y = 0.316x_1 + 0.197x_2 + 0.176x_3 + 0.141x_4
 $$
