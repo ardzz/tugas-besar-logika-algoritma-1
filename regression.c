@@ -132,31 +132,9 @@ int linear_regression(
     multiple_linear_regression->result.b6 = gaussian_elimination[5];
     multiple_linear_regression->result.b0 = sigma_y->y.average - (multiple_linear_regression->result.b1 * sigma_x->x1.average) - (multiple_linear_regression->result.b2 * sigma_x->x2.average) - (multiple_linear_regression->result.b3 * sigma_x->x3.average) - (multiple_linear_regression->result.b4 * sigma_x->x4.average) - (multiple_linear_regression->result.b5 * sigma_x->x5.average) - (multiple_linear_regression->result.b6 * sigma_x->x6.average);
 
-    multiple_linear_regression->result.standard_error_estimate = standard_error_of_estimate(multiple_linear_regression);
-    multiple_linear_regression->result.r_squared = r_squared(multiple_linear_regression);
-
     return 0;
 }
 
-
-long double r_squared(struct multiple_linear_regression *multiple_linear_regression){
-    long double numerator, denominator;
-    long double b1, sigma_x1y, b2, sigma_x2y, b3, sigma_x3y, b4, sigma_x4y, b5, sigma_x5y, b6, sigma_x6y;
-
-    b1 = multiple_linear_regression->result.b1;
-    b2 = multiple_linear_regression->result.b2;
-    b3 = multiple_linear_regression->result.b3;
-    b4 = multiple_linear_regression->result.b4;
-    b5 = multiple_linear_regression->result.b5;
-    b6 = multiple_linear_regression->result.b6;
-    sigma_x1y = multiple_linear_regression->sigma_xy.x1y_sigma_of_sigma;
-    sigma_x2y = multiple_linear_regression->sigma_xy.x2y_sigma_of_sigma;
-
-    denominator = multiple_linear_regression->sigma_y.y.sigma_of_sigma;
-    numerator = (b1 * sigma_x1y) + (b2 * sigma_x2y);
-
-    return numerator / denominator;
-}
 /*
  * Sigma (y_actual - y_predicted)^2
  */

@@ -88,7 +88,7 @@ int forwardElim(long double mat[NOK][NOK+1])
 
         /* find greater amplitude for pivot if any */
         for (int i = k+1; i < NOK; i++)
-            if (fabs(mat[i][k]) > v_max)
+            if (fabsl(mat[i][k]) > v_max)
                 v_max = mat[i][k], i_max = i;
 
         /* if a principal diagonal element is zero,

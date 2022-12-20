@@ -86,10 +86,4 @@ int linear_regression(const long double *x1, const long double *x2, const long d
                       const long double *x4, const long double *x5, const long double *x6,
                       long double *y, struct multiple_linear_regression *multiple_linear_regression);
 
-long double standard_error_of_estimate(struct multiple_linear_regression *multiple_linear_regression);
-
-long double r_squared(struct multiple_linear_regression *multiple_linear_regression);
-
-long double mean_absolute_error(const long double *y, const long double *y_hat, int n);
-
 long double predict(struct multiple_linear_regression *multiple_linear_regression, long double x1, long double x2, long double x3, long double x4, long double x5, long double x6);
