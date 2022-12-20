@@ -21,7 +21,6 @@ int main()
                 x5[index] = file.GetField(&file, "Speed");
                 x6[index] = file.GetField(&file, "HP");
                 y[index] = file.GetField(&file, "Win Percentage");
-                printf("[%d] %Lf %Lf %Lf %Lf %Lf %Lf %Lf\n", index, x1[index], x2[index], x3[index], x4[index], x5[index], x6[index], y[index]);
                 index++;
             }
         }
@@ -34,7 +33,8 @@ int main()
 
         printf("Tugas Besar: Logika dan Algoritma Semester 1\n");
         printf("Model Regresi Linear Berganda: \n");
-        printf("y = %Lf + (%Lf)x1 + (%Lf)x2 + (%Lf)x3 + (%Lf)x4 + (%Lf)x5 + (%Lf)x6\n\n", regression.result.b0, regression.result.b1, regression.result.b2, regression.result.b3, regression.result.b4, regression.result.b5, regression.result.b6);
+        printf("y = %Lf + (%Lf)x1 + (%Lf)x2 + (%Lf)x3 + (%Lf)x4 + (%Lf)x5 + (%Lf)x6\n\n", regression.result.b0, regression.result.b1, regression.result.b2,
+               regression.result.b3, regression.result.b4, regression.result.b5, regression.result.b6);
 
         printf("Diketahui variabel independen: \n");
         printf("x1 [Attack] = %Lf\n", x1[1]);
@@ -46,7 +46,9 @@ int main()
         printf("Berdasarkan data diatas, berapakah presentase kemenangan pokemon tersebut? \n\n");
 
         printf("Substitusi nilai variabel independen ke dalam model machine learning: \n");
-        printf("y = %Lf + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf)\n", regression.result.b0, regression.result.b1, x1[1], regression.result.b2, x2[1], regression.result.b3, x3[1], regression.result.b4, x4[1], regression.result.b5, x5[1], regression.result.b6, x6[1]);
+        printf("y = %Lf + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf)\n", regression.result.b0,
+               regression.result.b1, x1[1], regression.result.b2, x2[1], regression.result.b3, x3[1],
+               regression.result.b4, x4[1], regression.result.b5, x5[1],  regression.result.b6, x6[1]);
         y_hat = predict(&regression, x1[1], x2[1], x3[1], x4[1], x5[1], x6[1]);
         printf("Jadi presentase kemenangan pokemon tersebut adalah sebanyak %Lf persen\n", y_hat * 100);
 
