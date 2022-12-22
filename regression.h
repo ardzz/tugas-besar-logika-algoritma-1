@@ -68,9 +68,6 @@ struct result{
     long double b4;
     long double b5;
     long double b6;
-    long double standard_error_estimate;
-    long double r_squared;
-    long double mean_absolute_error;
 };
 
 struct multiple_linear_regression {
