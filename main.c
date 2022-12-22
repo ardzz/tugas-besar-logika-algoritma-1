@@ -2,11 +2,10 @@
 #include "csvReader.h"
 #include "regression.h"
 
-#define N 782
-
 int main()
     {
-        CSVFILE file;
+    #define N 782
+    CSVFILE file;
         char *dataset = "/Users/macbookair/Collage/Logika dan Algoritma/Regresi Linear Berganda/dataset.csv";
         long double x1[N], x2[N], x3[N], x4[N], x5[N], x6[N], y[N];
         long double y_hat;
@@ -36,22 +35,29 @@ int main()
         printf("y = %Lf + (%Lf)x1 + (%Lf)x2 + (%Lf)x3 + (%Lf)x4 + (%Lf)x5 + (%Lf)x6\n\n", regression.result.b0, regression.result.b1, regression.result.b2,
                regression.result.b3, regression.result.b4, regression.result.b5, regression.result.b6);
 
-        printf("Diketahui variabel independen: \n");
-        printf("x1 [Attack] = %Lf\n", x1[1]);
-        printf("x2 [Defense] = %Lf\n", x2[1]);
-        printf("x3 [Sp. Atk] = %Lf\n", x3[1]);
-        printf("x4 [Sp. Def] = %Lf\n", x4[1]);
-        printf("x5 [Speed] = %Lf\n", x5[1]);
-        printf("x6 [Generation] = %Lf\n", x6[1]);
+        printf("Input variabel independen: \n");
+        double x1_input, x2_input, x3_input, x4_input, x5_input, x6_input;
+        printf("x1 [Attack]: ");
+        scanf("%lf", &x1_input);
+        printf("x2 [Defense]: ");
+        scanf("%lf", &x2_input);
+        printf("x3 [Sp. Atk]: ");
+        scanf("%lf", &x3_input);
+        printf("x4 [Sp. Def]: ");
+        scanf("%lf", &x4_input);
+        printf("x5 [Speed]: ");
+        scanf("%lf", &x5_input);
+        printf("x6 [HP]: ");
+        scanf("%lf", &x6_input);
+
         printf("Berdasarkan data diatas, berapakah presentase kemenangan pokemon tersebut? \n\n");
 
         printf("Substitusi nilai variabel independen ke dalam model machine learning: \n");
-        printf("y = %Lf + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf) + (%Lf)(%Lf)\n", regression.result.b0,
-               regression.result.b1, x1[1], regression.result.b2, x2[1], regression.result.b3, x3[1],
-               regression.result.b4, x4[1], regression.result.b5, x5[1],  regression.result.b6, x6[1]);
-        y_hat = predict(&regression, x1[1], x2[1], x3[1], x4[1], x5[1], x6[1]);
+        printf("y = %Lf + (%Lf)(%f) + (%Lf)(%f) + (%Lf)(%f) + (%Lf)(%f) + (%Lf)(%f) + (%Lf)(%f)\n", regression.result.b0,
+               regression.result.b1, x1_input, regression.result.b2, x2_input, regression.result.b3, x3_input,
+               regression.result.b4, x4_input, regression.result.b5, x5_input,  regression.result.b6, x6_input);
+        y_hat = predict(&regression, x1_input, x2_input, x3_input, x4_input, x5_input, x6_input);
         printf("Jadi presentase kemenangan pokemon tersebut adalah sebanyak %Lf persen\n", y_hat * 100);
-
 
         return 0;
     }
